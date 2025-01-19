@@ -203,6 +203,50 @@ section p, section ul {
     color: #e67e22;
 }
 
+/* Customer Feedback Section */
+.feedback {
+    padding: 50px 20px;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    text-align: center;
+}
+
+.feedback h2 {
+    font-size: 2em;
+    color: #f1c40f;
+    margin-bottom: 30px;
+}
+
+/* Carousel */
+.carousel {
+    overflow: hidden;
+    max-width: 100%;
+    position: relative;
+}
+
+.carousel-track {
+    display: flex;
+    animation: scroll 20s linear infinite;
+}
+
+.carousel-image {
+    max-width: 200px;
+    margin: 0 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     .nav ul {
