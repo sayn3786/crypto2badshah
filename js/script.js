@@ -1,5 +1,14 @@
 // script.js
 
+
+document.addEventListener("DOMContentLoaded", () => {
+    const track = document.querySelector(".carousel-track");
+    const cloneItems = [...track.children].map(item => item.cloneNode(true));
+    cloneItems.forEach(clone => track.appendChild(clone));
+});
+
+
+
 // Function to fetch crypto data from CoinGecko API
 async function fetchCryptoData() {
     const url = 'https://api.coingecko.com/api/v3/coins/markets';
